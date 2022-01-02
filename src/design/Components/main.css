@@ -17,4 +17,23 @@
 
   /* font size */
   --fontSize: 18px;
+  --fontWeight3: 300;
+  --fontWeight4: 400;
+  --fontWeight5: 500;
+}
+
+main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: var(--Dark_blue);
+}
+
+div.reportContainer {
+  width: 90%;
+  background-color: yellow;
+  height: 70vh;
+  max-width: 1200px;
 }

@@ -2,7 +2,11 @@ import React from "react";
 import "./main.css";
 
 const Homepage = () => {
-  return <div></div>;
+  return <main>
+      <div className="reportContainer">
+          
+      </div>
+  </main>;
 };
 
 export default Homepage;
