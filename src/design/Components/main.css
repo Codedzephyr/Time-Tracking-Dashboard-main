@@ -24,16 +24,108 @@
 
 main {
   max-width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  height: 100vh;
   align-items: center;
-  background-color: var(--Dark_blue);
+  background-color: var(--Very_dark_blue);
 }
 
 div.reportContainer {
   width: 90%;
-  background-color: yellow;
-  height: 70vh;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 30%;
+  border: 5px solid white;
+  display: block;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+div.gridContainer {
+  display: grid;
+  margin: 2rem 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* grid-template-rows: repeat(2, 400px); */
+}
+
+.mainProfileContainer {
+  /* background-color : var(--Blue); */
+  grid-row: 1/3;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.profileContainer {
+  flex: 2;
+  background-color: var(--Blue);
+  border-radius: 15px;
+  z-index: 12;
+}
+
+div.timeContainer {
+  flex: 1;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  /* position: relative;
+  top: -20px; */
+}
+
+p.title1 {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  color: var(--Pale_Blue);
+}
+
+p.content {
+  font-weight: var(--fontWeight3);
+  font-size: 2.0rem;
+  font-family: "Rubik", sans-serif;
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 3.7rem;
+  color: var(--Pale_Blue);
+}
+
+.workContainer {
+  background-color: steelblue;
+  border-radius: 12px;
+}
+
+.playContainer {
+  background-color: springgreen;
+  border-radius: 12px;
+}
+
+.playContainer {
+  background-color: palevioletred;
+  border-radius: 12px;
+}
+
+.studyContainer {
+  background-color: mediumspringgreen;
+  border-radius: 12px;
+}
+
+.exerciseContainer {
+  background-color: olive;
+  border-radius: 12px;
+}
+
+.socialContainer {
+  background-color: orange;
+  border-radius: 12px;
+}
+
+.selfCareContainer {
+  background-color: indigo;
+  border-radius: 12px;
 }
