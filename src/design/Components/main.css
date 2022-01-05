@@ -4,7 +4,7 @@
   --Blue: hsl(246, 80%, 60%);
   --Light_red: hsl(15, 100%, 70%); /*work*/
   --Soft_blue: hsl(195, 74%, 62%); /*play*/
-  --Light_red: hsl(348, 100%, 68%); /*study*/
+  --Light_red1: hsl(348, 100%, 68%); /*study*/
   --Lime_green: hsl(145, 58%, 55%); /*exercise*/
   --Violet: hsl(264, 64%, 52%); /*social*/
   --Soft_orange: hsl(43, 84%, 65%); /*self_care*/
@@ -72,8 +72,8 @@ div.timeContainer {
   flex: 1;
   background-color: var(--Dark_blue);
   border-radius: 15px;
-  /* position: relative;
-  top: -20px; */
+  position: relative;
+  top: -20px;
 }
 
 p.title1 {
@@ -87,7 +87,7 @@ p.title1 {
 
 p.content {
   font-weight: var(--fontWeight3);
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-family: "Rubik", sans-serif;
   margin-left: 1.5rem;
   margin-top: 0.7rem;
@@ -95,37 +95,192 @@ p.content {
   color: var(--Pale_Blue);
 }
 
+ul.trackingList {
+  margin-left: 1.5rem;
+  margin-top: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+ul.trackingList > li.trackingListItem {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+li.trackingListItem > a {
+  color: var(--Desaturated_blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+li.trackingListItem > a:hover {
+  color: var(--Pale_Blue);
+}
+
 .workContainer {
-  background-color: steelblue;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.imageDesignContainer {
+  flex: 1;
+  background-color: var(--Light_red);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer > svg {
+  float: right;
+  margin-right: 1rem;
+}
+
+div.contentsContainer {
+  flex: 2;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  position: relative;
+  top: -25px;
+}
+
+div.contentsContainer:hover {
+  background-color: var(--Desaturated_blue);
+  cursor: pointer;
+}
+
+p.leftText {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight4);
+  color: var(--Pale_Blue);
+}
+
+p.rightText {
+  display: inline-block;
+  float: right;
+  color: var(--Pale_Blue);
+  font-family: "Rubik", sans-serif;
+  /* font-size: var(--fontSize); */
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: var(--fontWeight4);
+}
+
+p.hrsTextWeekly {
+  font-weight: var(--fontWeight3);
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextPreviousWeekly {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+}
+div.smallerContainer {
+  margin: 1.5rem;
 }
 
 .playContainer {
-  background-color: springgreen;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
-.playContainer {
-  background-color: palevioletred;
-  border-radius: 12px;
+div.imageDesignContainer1 {
+  flex: 1;
+  background-color: var(--Soft_blue);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer1 > svg {
+  float: right;
+  margin-right: 1rem;
 }
 
 .studyContainer {
-  background-color: mediumspringgreen;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+div.imageDesignContainer2 {
+  flex: 1;
+  background-color: var(--Light_red1);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer2 > svg {
+  float: right;
+  margin-right: 1rem;
 }
 
 .exerciseContainer {
-  background-color: olive;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+div.imageDesignContainer3 {
+  flex: 1;
+  background-color: var(--Lime_green);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer3 > svg {
+  float: right;
+  margin-right: 1rem;
+}
+
+
+div.contentsContainer1 {
+  flex: 2;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  position: relative;
+  top: -34px;
 }
 
 .socialContainer {
-  background-color: orange;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.contentsContainer2 {
+  flex: 2;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  position: relative;
+  top: -34px;
+}
+
+
+div.imageDesignContainer4 {
+  flex: 1;
+  background-color: var(--Violet);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer4 > svg {
+  float: right;
+  margin-right: 1rem;
 }
 
 .selfCareContainer {
-  background-color: indigo;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+div.imageDesignContainer5 {
+  flex: 1;
+  background-color: var(--Soft_orange);
+  border-radius: 15px;
+}
+
+div.imageDesignContainer5 > svg {
+  float: right;
+  margin-right: 1rem;
 }
