@@ -71,11 +71,11 @@ div.profileContainer {
   flex-direction: column;
 }
 
-div.avatarContainer{
+div.avatarContainer {
   flex: 1;
 }
 
-div.textContainer{
+div.textContainer {
   flex: 2;
 }
 
@@ -149,6 +149,7 @@ div.contentsContainer {
   background-color: var(--Dark_blue);
   border-radius: 15px;
   position: relative;
+  z-index: 20;
   top: -25px;
 }
 
@@ -172,6 +173,11 @@ div.contentsContainer3:hover {
   cursor: pointer;
 }
 
+div.contentsContainer4:hover {
+  background-color: var(--Desaturated_blue);
+  cursor: pointer;
+}
+
 p.leftText {
   display: inline-block;
   font-family: "Rubik", sans-serif;
@@ -180,10 +186,10 @@ p.leftText {
   color: var(--Pale_Blue);
 }
 
-
 p.hrsTextWeekly {
   font-weight: var(--fontWeight3);
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
   font-family: "Rubik", sans-serif;
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
@@ -221,7 +227,6 @@ div.imageDesignContainer1 > svg {
   flex-direction: column;
 }
 
-
 div.imageDesignContainer2 {
   flex: 1;
   background-color: var(--Light_red1);
@@ -238,7 +243,6 @@ div.imageDesignContainer2 > svg {
   flex-direction: column;
 }
 
-
 div.imageDesignContainer3 {
   flex: 1;
   background-color: var(--Lime_green);
@@ -249,7 +253,6 @@ div.imageDesignContainer3 > svg {
   float: right;
   margin-right: 1rem;
 }
-
 
 div.contentsContainer1 {
   flex: 2;
@@ -282,6 +285,14 @@ div.contentsContainer3 {
   cursor: pointer;
 }
 
+div.contentsContainer4 {
+  flex: 2;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  position: relative;
+  top: -34px;
+  cursor: pointer;
+}
 
 div.imageDesignContainer4 {
   flex: 1;
@@ -301,7 +312,6 @@ div.imageDesignContainer4 > svg {
   flex-direction: column;
 }
 
-
 div.imageDesignContainer5 {
   flex: 1;
   background-color: var(--Soft_orange);
@@ -313,35 +323,64 @@ div.imageDesignContainer5 > svg {
   margin-right: 1rem;
 }
 
-.ellipsis{
+.ellipsis {
   float: right;
   cursor: pointer;
 }
 
-
-@media only screen and (max-width:768px){
-  div.gridContainer{
+@media only screen and (max-width: 768px) {
+  div.gridContainer {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7,auto);
+    grid-template-rows: repeat(7, auto);
   }
 
-  .mainProfileContainer{
+  .mainProfileContainer {
     grid-row: 1;
   }
 
-  div.profileContainer{
+  div.profileContainer {
     flex-direction: row;
   }
 
-  ul.trackingList{
+  ul.trackingList {
     display: flex;
     justify-content: space-around;
     margin-left: 0px;
-    margin-top: 3.7rem;
+    margin-top: 2.7rem;
+    margin-bottom: 1rem;
   }
 
-  p.content{
+  p.content {
     margin-bottom: 1.7rem;
   }
-}
 
+  p.hrsTextWeekly {
+    display: inline-block;
+  }
+
+  p.hrsTextPreviousWeekly {
+    display: inline-block;
+    float: right;
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  div.contentsContainer2 {
+    top: -16px;
+    z-index: 20;
+  }
+
+  div.contentsContainer {
+    top: -38px;
+  }
+
+  div.contentsContainer3 {
+    top: -28px;
+    z-index: 20;
+  }
+
+  div.contentsContainer4 {
+    top: -25px;
+    z-index: 20;
+  }
+}

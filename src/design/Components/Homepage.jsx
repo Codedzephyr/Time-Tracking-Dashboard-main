@@ -58,8 +58,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
@@ -88,8 +90,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
@@ -118,8 +122,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
@@ -148,8 +154,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
@@ -176,8 +184,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
@@ -191,7 +201,7 @@ const Homepage = () => {
                 />
               </svg>
             </div>
-            <div className="contentsContainer1">
+            <div className="contentsContainer4">
               <div className="smallerContainer">
                 <p className="leftText">Self Care</p>
                 <svg
@@ -206,8 +216,10 @@ const Homepage = () => {
                     fill-rule="evenodd"
                   />
                 </svg>
-                <p className="hrsTextWeekly">32hrs</p>
-                <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                <div className="changingTimeContainer">
+                  <p className="hrsTextWeekly">32hrs</p>
+                  <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
+                </div>
               </div>
             </div>
           </div>
