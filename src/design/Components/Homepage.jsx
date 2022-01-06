@@ -9,11 +9,15 @@ const Homepage = () => {
         <div className="gridContainer">
           <div className="mainProfileContainer">
             <div className="profileContainer">
-              <img src={avatar} alt="jeremy" className="avatar" />
-              <p className="title1">Report for</p>
-              <p className="content">
-                Jeremy <br /> Robson
-              </p>
+              <div className="avatarContainer">
+                <img src={avatar} alt="jeremy" className="avatar" />
+              </div>
+              <div className="textContainer">
+                <p className="title1">Report for</p>
+                <p className="content">
+                  Jeremy <br /> Robson
+                </p>
+              </div>
             </div>
             <div className="timeContainer">
               <ul className="trackingList">
@@ -42,7 +46,18 @@ const Homepage = () => {
             <div className="contentsContainer">
               <div className="smallerContainer">
                 <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>
@@ -60,8 +75,19 @@ const Homepage = () => {
             </div>
             <div className="contentsContainer">
               <div className="smallerContainer">
-                <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <p className="leftText"> Play</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>
@@ -79,8 +105,19 @@ const Homepage = () => {
             </div>
             <div className="contentsContainer">
               <div className="smallerContainer">
-                <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <p className="leftText">Study</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>
@@ -98,8 +135,19 @@ const Homepage = () => {
             </div>
             <div className="contentsContainer2">
               <div className="smallerContainer">
-                <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <p className="leftText">Exercise</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>
@@ -113,10 +161,21 @@ const Homepage = () => {
                 </g>
               </svg>
             </div>
-            <div className="contentsContainer2">
+            <div className="contentsContainer3">
               <div className="smallerContainer">
-                <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <p className="leftText">Social</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>
@@ -134,8 +193,19 @@ const Homepage = () => {
             </div>
             <div className="contentsContainer1">
               <div className="smallerContainer">
-                <p className="leftText"> Work</p>
-                <p className="rightText">...</p>
+                <p className="leftText">Self Care</p>
+                <svg
+                  width="21"
+                  height="5"
+                  className="ellipsis"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    fill="#BBC0FF"
+                    fill-rule="evenodd"
+                  />
+                </svg>
                 <p className="hrsTextWeekly">32hrs</p>
                 <p className="hrsTextPreviousWeekly">Last Week - 32hrs</p>
               </div>

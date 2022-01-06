@@ -24,7 +24,7 @@
 
 main {
   max-width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,16 +38,17 @@ div.reportContainer {
 
 img.avatar {
   border-radius: 50%;
-  width: 30%;
+  width: 75%;
+  max-width: 100px;
   border: 5px solid white;
   display: block;
   margin-left: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 div.gridContainer {
   display: grid;
-  margin: 2rem 0;
+  margin: 7.55rem 0;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   /* grid-template-rows: repeat(2, 400px); */
@@ -66,6 +67,16 @@ div.profileContainer {
   background-color: var(--Blue);
   border-radius: 15px;
   z-index: 12;
+  display: flex;
+  flex-direction: column;
+}
+
+div.avatarContainer{
+  flex: 1;
+}
+
+div.textContainer{
+  flex: 2;
 }
 
 div.timeContainer {
@@ -73,7 +84,7 @@ div.timeContainer {
   background-color: var(--Dark_blue);
   border-radius: 15px;
   position: relative;
-  top: -20px;
+  top: -32px;
 }
 
 p.title1 {
@@ -97,7 +108,7 @@ p.content {
 
 ul.trackingList {
   margin-left: 1.5rem;
-  margin-top: 2.7rem;
+  margin-top: 3.7rem;
   margin-bottom: 2rem;
 }
 
@@ -146,6 +157,21 @@ div.contentsContainer:hover {
   cursor: pointer;
 }
 
+div.contentsContainer1:hover {
+  background-color: var(--Desaturated_blue);
+  cursor: pointer;
+}
+
+div.contentsContainer2:hover {
+  background-color: var(--Desaturated_blue);
+  cursor: pointer;
+}
+
+div.contentsContainer3:hover {
+  background-color: var(--Desaturated_blue);
+  cursor: pointer;
+}
+
 p.leftText {
   display: inline-block;
   font-family: "Rubik", sans-serif;
@@ -154,16 +180,6 @@ p.leftText {
   color: var(--Pale_Blue);
 }
 
-p.rightText {
-  display: inline-block;
-  float: right;
-  color: var(--Pale_Blue);
-  font-family: "Rubik", sans-serif;
-  /* font-size: var(--fontSize); */
-  font-size: 1.3rem;
-  cursor: pointer;
-  font-weight: var(--fontWeight4);
-}
 
 p.hrsTextWeekly {
   font-weight: var(--fontWeight3);
@@ -254,6 +270,16 @@ div.contentsContainer2 {
   border-radius: 15px;
   position: relative;
   top: -34px;
+  cursor: pointer;
+}
+
+div.contentsContainer3 {
+  flex: 2;
+  background-color: var(--Dark_blue);
+  border-radius: 15px;
+  position: relative;
+  top: -34px;
+  cursor: pointer;
 }
 
 
@@ -261,11 +287,13 @@ div.imageDesignContainer4 {
   flex: 1;
   background-color: var(--Violet);
   border-radius: 15px;
+  overflow: hidden;
 }
 
 div.imageDesignContainer4 > svg {
   float: right;
   margin-right: 1rem;
+  margin-top: -11px;
 }
 
 .selfCareContainer {
@@ -284,3 +312,36 @@ div.imageDesignContainer5 > svg {
   float: right;
   margin-right: 1rem;
 }
+
+.ellipsis{
+  float: right;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px){
+  div.gridContainer{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7,auto);
+  }
+
+  .mainProfileContainer{
+    grid-row: 1;
+  }
+
+  div.profileContainer{
+    flex-direction: row;
+  }
+
+  ul.trackingList{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+    margin-top: 3.7rem;
+  }
+
+  p.content{
+    margin-bottom: 1.7rem;
+  }
+}
+
