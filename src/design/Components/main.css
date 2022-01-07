@@ -500,7 +500,18 @@ div.imageDesignContainer5 > svg {
   }
 
   p.hrsTextPreviousWeekly {
-    display: inline-block;
+    float: right;
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  p.hrsTextPreviousMonthlyAppear {
+    float: right;
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  p.hrsTextPreviousDailyAppear {
     float: right;
     margin-top: 1.2rem;
     margin-bottom: 0.7rem;
