@@ -49,6 +49,7 @@ img.avatar {
 div.gridContainer {
   display: grid;
   margin: 7.55rem 0;
+  /* margin: 3.5rem 0; */
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   /* grid-template-rows: repeat(2, 400px); */
@@ -117,8 +118,50 @@ ul.trackingList > li.trackingListItem {
   list-style: none;
 }
 
-li.trackingListItem > a {
+/* li.trackingListItem > a {
   color: var(--Desaturated_blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+} */
+
+.Daily {
+  color: var(--Desaturated_blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+.DailyColor {
+  color: var(--Pale_Blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+.Monthly {
+  color: var(--Desaturated_blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+.MonthlyColor {
+  color: var(--Pale_Blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+.Weekly {
+  color: var(--Desaturated_blue);
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fontWeight3);
+  text-decoration: none;
+}
+
+.WeeklyColor {
+  color: var(--Pale_Blue);
   font-family: "Rubik", sans-serif;
   font-weight: var(--fontWeight3);
   text-decoration: none;
@@ -192,6 +235,62 @@ p.hrsTextWeekly {
   font-size: Clamp(1.6rem, 5vw, 3rem);
   font-family: "Rubik", sans-serif;
   margin-top: 0.7rem;
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextWeeklyAppear {
+  font-weight: var(--fontWeight3);
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  display: none;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextDailyAppear {
+  font-weight: var(--fontWeight3);
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextMonthlyAppear {
+  font-weight: var(--fontWeight3);
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextDaily {
+  font-weight: var(--fontWeight3);
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  display: none;
+  margin-bottom: 0.7rem;
+  color: var(--Pale_Blue);
+}
+
+p.hrsTextMonthly {
+  font-weight: var(--fontWeight3);
+  /* font-size: 3rem; */
+  font-size: Clamp(1.6rem, 5vw, 3rem);
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.7rem;
+  display: none;
   margin-bottom: 0.7rem;
   color: var(--Pale_Blue);
 }
@@ -201,7 +300,49 @@ p.hrsTextPreviousWeekly {
   font-weight: var(--fontWeight3);
   font-family: "Rubik", sans-serif;
   color: var(--Pale_Blue);
+  display: block;
 }
+
+p.hrsTextPreviousWeeklyAppear {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+  display: none;
+}
+
+p.hrsTextPreviousDaily {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+  display: none;
+}
+
+p.hrsTextPreviousMonthly {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+  display: none;
+}
+
+p.hrsTextPreviousDailyAppear {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+  display: block;
+}
+
+p.hrsTextPreviousMonthlyAppear {
+  /* font-size: var(--fontSize); */
+  font-weight: var(--fontWeight3);
+  font-family: "Rubik", sans-serif;
+  color: var(--Pale_Blue);
+  display: block;
+}
+
 div.smallerContainer {
   margin: 1.5rem;
 }
@@ -382,5 +523,17 @@ div.imageDesignContainer5 > svg {
   div.contentsContainer4 {
     top: -25px;
     z-index: 20;
+  }
+
+  div.changingTimeContainer {
+    display: flex;
+  }
+
+  .hrsTextWeeklyContainer {
+    flex: 1;
+  }
+
+  .hrsTextPreviousWeeklyContainer {
+    flex: 1;
   }
 }
