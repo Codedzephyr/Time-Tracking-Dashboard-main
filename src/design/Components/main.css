@@ -547,4 +547,12 @@ div.imageDesignContainer5 > svg {
   .hrsTextPreviousWeeklyContainer {
     flex: 1;
   }
+
+  div.reportContainer {
+    transition: width 2s;
+  }
+
+  div.gridContainer {
+    margin: 3.55rem 0;
+  }
 }
